@@ -51,21 +51,24 @@
   <body>
     <div class="wrapper">
       <nav>
-        <div class="menu-icon">
-          <i class="fa fa-bars fa-2x"></i>
-        </div>
         <div class="navbar">
           <div class="logo">
             <i class="bx bxl-c-plus-plus"></i>
             <span class="sidebar__logo-title">CodingBlog</span>
           </div>
-          <ul>
+          <div class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul id="navbar" class="">
             <li><a href="#">Home</a></li>
             <li><a href="#">Article</a></li>
             <li class="has-children">
               <div class="dropdown">
-                <a href="#">Pages</a>
-                <i class="bx bxs-chevron-down arrow"></i>
+                <div style="display: flex; align-items: center">
+                  <a href="#">Pages</a>
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+
                 <div class="dropdown-content">
                   <a href="#" class="sub-page">Page 1</a>
                   <a href="#" class="sub-page">Page 2</a>
@@ -85,46 +88,55 @@
 
       <div class="main-container">
         <div class="left-column-container">
-          <h1>Read the most interesting articles</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-          <div class="search-bar">
-            <!-- <i class="ri-search-line search-icon"></i> -->
-            <input type="text" placeholder="Search article" />
-            <button>Search</button>
-          </div>
-          <div class="popular-tags">
-            <span
-              style="
-                font-size: 16px;
-                font-style: italic;
-                font-weight: 500;
-                margin-right: 20px;
-                color: #5a7184;
-              "
-              >Popular Tags:
-            </span>
-            <button>Design</button>
-            <button>User Experience</button>
-            <button>User Interfaces</button>
+          <div class="header-container">
+            <h1>Read the most interesting articles</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+            <div class="search-bar">
+              <input
+                type="text"
+                placeholder="Search article"
+                class="search-input"
+              />
+              <button class="search-button">Search</button>
+            </div>
+
+            <div class="popular-tags">
+              <span
+                style="
+                  font-size: 16px;
+                  font-style: italic;
+                  font-weight: 500;
+                  margin-right: 20px;
+                  color: #5a7184;
+                "
+                >Popular Tags:
+              </span>
+              <button>Design</button>
+              <button>User Experience</button>
+              <button>User Interfaces</button>
+            </div>
           </div>
         </div>
         <div class="right-column-container">
-          <img src="./assets/images/LIve Chat.svg" alt="Descriptive Alt Text" />
+          <img
+            src="./assets/images/LIve Chat.svg"
+            alt="Descriptive Alt Text"
+          />
         </div>
       </div>
     </div>
 
     <div class="container-fluid mt-2">
-      <div class="row" style="margin-left: 110px; margin-right: 110px">
+      <div class="row">
         <div class="col-4 mt-5">
           <div class="card">
             <img src="./assets/images/1.svg" />
             <div class="card-body">
               <div class="article-header">
-                <div style="margin-right: 20px">
+                <div >
                   <h2>Future of Work</h2>
                   <p>
                     Majority of people will work in jobs that don't exist today.
@@ -159,7 +171,7 @@
             <img src="./assets/images/2.svg" />
             <div class="card-body">
               <div class="article-header">
-                <div style="margin-right: 20px">
+                <div >
                   <h2>Why Use External It Support</h2>
                   <p>
                     Thanks to never-ending piles of data & the amount of
@@ -195,7 +207,7 @@
             <img src="./assets/images/3.svg" />
             <div class="card-body">
               <div class="article-header">
-                <div style="margin-right: 20px">
+                <div >
                   <h2>Future of Learning</h2>
                   <p>
                     A constant ability to learn will be on the most crucial
@@ -231,7 +243,7 @@
             <img src="./assets/images/4.svg" />
             <div class="card-body">
               <div class="article-header">
-                <div style="margin-right: 20px">
+                <div >
                   <h2>Help Finding Information Online</h2>
                   <p>
                     Majority of peole will work in jobs that don’t exist today.
@@ -266,7 +278,7 @@
             <img src="./assets/images/5.svg" />
             <div class="card-body">
               <div class="article-header">
-                <div style="margin-right: 20px">
+                <div >
                   <h2>How Does An Lcd Screen Work</h2>
                   <p>
                     Thanks to never-ending piles of data & the amount of
@@ -302,7 +314,7 @@
             <img src="./assets/images/6.svg" />
             <div class="card-body">
               <div class="article-header">
-                <div style="margin-right: 20px">
+                <div >
                   <h2>Headset No Longer Wired For Sound</h2>
                   <p>
                     A constant ability to learn will be on the most crucial
@@ -357,5 +369,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function toggleMenu() {
+        var navbar = document.getElementById("navbar");
+        if (navbar.className === "") {
+          navbar.className = "active";
+        } else {
+          navbar.className = "";
+        }
+      }
+    </script>
   </body>
 </html>
