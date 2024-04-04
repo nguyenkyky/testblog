@@ -1,0 +1,363 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --white-color: #fff;
+  --blue-color: #4070f4;
+  --grey-color: #707070;
+  --grey-color-light: #aaa;
+  --red-color: #ff0000;
+  --blue-light-color: #e4e9f7;
+  --grey-light-color: #f3f3f9;
+  --text-color: #000;
+  --grey-light-color-2: #f3f3f9;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+body {
+    font-family: "Helvetica Neue",sans-serif;
+    font-weight: lighter;
+}
+
+
+.logo {
+    line-height: 60px;
+    /* position: fixed; */
+    float: left;
+    margin: 15px 120px;
+    color: var(--blue-color);
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+nav {
+    /* position: fixed; */
+    width: 100%;
+    line-height: 60px;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    /* overflow: hidden; */
+    color: #000;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 80px;
+    transition: 1s;
+}
+
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 20px;;
+}
+
+nav ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #183B56;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.container-fluid .row .col-4 {
+    padding: 0 35px;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+
+.has-children:hover{
+    cursor: pointer;
+}
+
+.sign-in{
+    margin-right: 20px;
+}
+.sign-in a {
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: 2px solid #4070f4;
+    /* margin: 0 20px; */
+    color: #4070f4;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif; /* Make sure you include a font-family */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: -20px;
+    background-color: #f1f1f1; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+ .dropdown-content a {
+    color: black;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    border-bottom: 1px solid #ccc; 
+
+ }
+
+.dropdown-content a:last-child {
+    border-bottom: none; 
+}
+
+
+.dropdown-content a:hover:first-child {
+    background-color: #ddd;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+}
+.dropdown-content a:hover:last-child {
+    background-color: #ddd;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.has-children:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #f8f8f8; 
+} 
+
+
+
+
+
+
+
+
+/*                                                Container    */
+
+
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9FCFE;
+
+    /* padding: 20px; */
+    /* max-width: 1200px; */
+    /* margin: auto; */
+}
+
+.left-column-container {
+    margin-left: 120px;
+    width: 50%; /* Adjust as necessary */
+   
+
+}
+
+.right-column-container {
+
+    margin-right: 120px;
+    width: 50%; /* Adjust as necessary */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-column-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+ .main-container h1 {
+    margin-left: 100px;
+    line-height: 68px;
+    font-size: 56px; 
+    color: #183B56; 
+    
+ }
+ 
+ .main-container p {
+    padding-right: 120px;
+    margin-left: 100px;
+    color:#183B56;
+    line-height: 36px;
+    font-size: 20px;
+    margin-top: 20px;
+ }
+
+
+ .search-bar {
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.1);
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+
+
+.search-bar input[type="text"] {
+     width: 87%;
+     padding: 15px;
+     /* margin-right: 10px;  */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 4px;  */
+    border: none;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: blue; /* Adjust as necessary */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.search-bar button:hover {
+    background-color: darkblue; /* Adjust as necessary */
+}
+
+.popular-tags {
+    margin-top:20px;
+    margin-left: 100px;
+
+    margin-bottom: 20px;
+}
+
+.popular-tags button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #E2ECFB; /* Adjust as necessary */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color:var(--blue-color);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+
+}
+
+.popular-tags button:hover {
+    background-color: #e2e2e2; /* Adjust as necessary */
+}
+
+
+
+
+
+
+/* =================================================================    Card Styles ================================================================= */
+
+
+
+
+.author-avatar img {
+    border-radius: 50%; /* Creates a circular avatar */
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+  }
+
+  .author-info {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .publish-date {
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 120px ;
+    padding-left: 15px; /* Adjust space between author and date as needed */
+  }
+
+
+  .container-fluid .card {
+    border: 1px solid rgb(167 138 138 / 13%);
+    border-radius: 1.25rem;
+    box-shadow: 0px 1px 0px #f9eaea;
+  }
+
+  .card .card-body h2 {
+    font-size: 28;
+    color:#183B56 ;
+  }
+
+
+ 
+  .card .card-body p {
+    font-size: 18px;
+    color: #5A7184;
+  }
+
+  .card .card-body .author-name{
+    font-style: italic;
+    font-weight: 600;
+    margin:0;
+  }
+
+  .card .card-body .author-verify p{
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    padding: 3px 0;
+  }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    .right-column {
+        margin-top: 20px;
+    }
+}
