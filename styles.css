@@ -212,7 +212,7 @@ nav ul li a:hover {
 }
 
 .main-container p {
-  padding-right: 120px;
+  
   margin-left: 100px;
   color: #183b56;
   line-height: 36px;
@@ -286,11 +286,9 @@ input:focus {
 
 /* =================================================================    Card Styles ================================================================= */
 
-
-.container-fluid .row{
-    margin-left: 110px; 
-    margin-right: 110px;
-
+.container-fluid .row {
+  margin-left: 110px;
+  margin-right: 110px;
 }
 .author-avatar img {
   border-radius: 50%; /* Creates a circular avatar */
@@ -299,16 +297,16 @@ input:focus {
 }
 
 .author-info {
-    position: relative;
+  position: relative;
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
 }
 
 .publish-date {
-    font-size: 14px;
-    position: absolute;
-    right: 0;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
   font-style: italic;
   font-weight: 500;
   margin-left: 120px;
@@ -371,12 +369,10 @@ input:focus {
   outline: none; /* Remove focus outline */
 }
 
-
-
 @media (max-width: 1400px) {
-    .container-fluid .row{
-        margin: 0;
-    }
+  .container-fluid .row {
+    margin: 0;
+  }
   nav .navbar .logo {
     margin-left: 80px;
   }
@@ -401,16 +397,15 @@ input:focus {
   .left-column-container .popular-tags {
     display: flex;
   }
-  .card-body h2{
+  .card-body h2 {
     font-size: 20px;
   }
-  .card-body .article-header p{
+  .card-body .article-header p {
     font-size: 14px;
   }
 }
 
 @media (max-width: 1023px) {
-
   nav .navbar .logo {
     margin-left: 30px;
   }
@@ -476,7 +471,6 @@ input:focus {
     /* Thêm các styles cần thiết để hiển thị menu đầy đủ trong responsive layout */
   }
 
- 
   .container-fluid .row .col-4 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -484,7 +478,7 @@ input:focus {
   }
   .card-body .article-header p {
     font-size: 16px;
-}
+  }
 }
 
 @media (max-width: 768px) {
@@ -507,7 +501,6 @@ input:focus {
     max-width: 100%;
   }
 
-  
   .container-fluid .row {
     margin-left: 15px;
     margin-right: 15px;
@@ -515,10 +508,49 @@ input:focus {
 
   .left-column-container,
   .right-column-container {
-    flex: 1 0 auto; 
+    flex: 1 0 auto;
   }
-  
+
   .card-body h2 {
     font-size: 28px;
   }
+}
+
+@media (max-width: 500px) {
+  .wrapper nav .navbar .logo {
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .left-column-container h1 {
+    font-size: 36px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .left-column-container p {
+    font-size: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+  }
+
+  .left-column-container .search-bar {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .left-column-container .popular-tags {
+    margin-left: 24px;
+    margin-right: 24px;
+    display: block;
+  }
+  .left-column-container .popular-tags button {
+    margin-bottom: 10px;
+  }
+
+  .navbar .sign-in {
+    margin-right: 0;
+  }
+
+  .hamburger-menu {
+    margin-right: 0;
+}
 }
